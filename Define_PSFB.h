@@ -34,7 +34,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include "dsp.h"
-#include "p33fxxxx.h"
+#include "p33FJ16GS502.h"
+//#include "p33fxxxx.h"
 
 #define PWMClockFreq		943E6
 #define PWMSwitchingFreq	389E3

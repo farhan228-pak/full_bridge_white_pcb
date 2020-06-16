@@ -36,7 +36,7 @@
 #include "Variables_PSFB.h"
 #include "Define_PSFB.h"
 #include "dsp.h"
-
+#include "p33FJ16GS502.h"
 /*DMCI code*/
 //	 int array1[400];	
 //	 int array2[400];	 

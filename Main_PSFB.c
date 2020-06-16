@@ -135,7 +135,7 @@ int main (void)
         if(Sleepmodeflag ==1)	// Remote ON /OFF is enabled dsPIC is forced to enter sleep mode
         {
             Sleepmodeflag = 0;		// Clear the sleap mode flag
-            Sleep();			// Entered into sleep mode
+            //Sleep();			// Entered into sleep mode
         }
 
         if(faultCount>=1000)		// If the fault is repeatable disbale the PWM module
@@ -143,18 +143,18 @@ int main (void)
             PTCONbits.PTEN = 0;		// Disable the PWM module
             _ADCP1IE = 0;		//disable ADinterrupt
 
-            Nop();
-            Nop();
-            Nop();
+//            Nop();
+//            Nop();
+//            Nop();
         }
 
         if(FaultStatus == 2)
         {
             faultCount=faultCount+1;
             ADCinterruptcount = 0;
-            Nop();
-            Nop();
-            Nop();
+//            Nop();
+//            Nop();
+//            Nop();
             IOCON1bits.OVRENH = 0;	// If True, Bring PWM to normal operation
             IOCON1bits.OVRENL = 0;
             IOCON2bits.OVRENH = 0;	// If True, Bring PWM to normal operation
